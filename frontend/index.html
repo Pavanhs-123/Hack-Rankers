@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuinRebuild AI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏛️ RuinRebuild AI</h1>
+      <p>Upload ruin photos → reconstruct → visualize 3D restoration.</p>
+
+      <label class="upload-box">
+        <input id="images" type="file" multiple accept="image/*" />
+        <span>Select at least 3 images</span>
+      </label>
+
+      <button id="runBtn">Run Reconstruction</button>
+      <div id="status">Idle</div>
+
+      <div id="viewer"></div>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
